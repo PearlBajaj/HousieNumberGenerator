@@ -7,8 +7,8 @@
             this.defaults = {
                 endAt: 90,
                 numClass: 'autogen-num',
-                duration: 0.5,   // seconds
-                interval: 25  // ms
+                duration: 0.5,  
+                interval: 25
             };
             var settings = $.extend({}, this.defaults, options);
 
@@ -19,7 +19,6 @@
             return this.each(function() {
                 var $this = $(this);
 
-                // Wrap each number in a tag.
                 var frag = document.createDocumentFragment(),
                     numLen = settings.endAt.toString().length;
                 for (x = 0; x < numLen; x++) {
@@ -34,7 +33,6 @@
                     return num;
                 };
 
-                // Iterate each number.
                 $this.find('.' + settings.numClass).each(function() {
                     var $num = $(this),
                         num = parseInt( $num.text() );
@@ -78,13 +76,9 @@ function generateNum(){
     while(true){
         var i = getRandomInt(1, 90);
         if($.inArray(i, generated_numbers) == -1){
-            //$("#number").html(i);
             $("#number").numAnim({
                 endAt: i
             });
-            //$("#num-" + i).addClass("generated");
-            //generated_numbers.push(i);
-            //setTimeout("generateNum()",200);
             break;
         }
     }
