@@ -9,7 +9,7 @@
     }
     #grid-container{
         margin-top: 20px;
-        max-width: 900px;
+        max-width: 750;
         width: 100%;
         text-align: center;
         margin-left: auto;
@@ -36,10 +36,10 @@
         text-align: center;
         color: Black;
         font-weight: bold;
-        margin-top: 40px;
+        margin-top: 00px;
         display: inline-block;
         background-color: White;
-        padding: 20px;
+        padding: 00px;
         border-radius: 10px;
         border:0px solid White;
     }
@@ -71,6 +71,7 @@
         color: red;
     }
 
+
     @media screen and (max-width: 799px) {
         .container{
             width: 100%;
@@ -83,21 +84,12 @@
             display: block;
         }
 
-        #banner-container{
-            position: relative;
-            left: 0;
-            top: 0;
-            display: block;
-            margin-top: 20px;
-            border: none;
-        }
-
         #grid-container{
             width: 100%;
         }
 
         .num{
-            padding: 2px;
+            padding: 0px;
             font-size: 14px;
             margin: 1px;
         }
