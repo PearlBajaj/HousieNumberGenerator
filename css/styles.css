@@ -98,6 +98,17 @@
     @media screen and (min-width: 800px) and (max-width: 1300px){
         #grid-container{
             width: 600px;
+            height: 600px;
         }
     }
+
+    #footer{
+                font-size: 14px;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                color: Black;
+            }
+
+
 </style>
